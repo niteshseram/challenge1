@@ -1,6 +1,6 @@
 import Image from "next/image";
 import clsx from "clsx";
-import Button from "../components/button";
+import Button from "@/components/button";
 
 export default function Home() {
   return (
