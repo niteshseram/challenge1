@@ -14,6 +14,7 @@ export default function Button({ label, variant, className }: Props) {
         "rounded md:p-4 p-3 shadow",
         "lg:w-44 md:w-52 w-full",
         variant === "primary" && "bg-indigo-700 text-white",
+        variant === "secondary" && " text-neutral-900",
         className
       )}
     >
