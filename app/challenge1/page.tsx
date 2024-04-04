@@ -4,7 +4,7 @@ import Button from "@/components/button";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 flex challenge1-container">
+    <main className="min-h-screen p-4 flex challenge-container">
       <div
         className={clsx(
           "flex items-center justify-center gap-8 grow flex-col lg:flex-row",
