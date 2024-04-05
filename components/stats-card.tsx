@@ -9,8 +9,9 @@ export default function StatsCard({ count, label }: Props) {
   return (
     <div
       className={clsx(
-        "flex flex-col gap-4 p-[23px] w-full text-center",
-        "border border-neutral-200 rounded-lg shadow"
+        "flex flex-col gap-4 items-center justify-center w-full text-center",
+        "border border-neutral-200 rounded-lg shadow",
+        "md:h-[140px] h-[132px]"
       )}
     >
       <h1 className="text-4xl md:text-5xl font-bold text-indigo-700">
