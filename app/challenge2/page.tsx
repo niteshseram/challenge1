@@ -9,7 +9,7 @@ export default function Home() {
       <div
         className={clsx(
           "flex items-center justify-center gap-12 md:gap-16 grow flex-col",
-          "rounded md:rounded-md lg:rounded-lg lg:shadow-lg md:shadow-md shadow-sm",
+          "rounded md:rounded-md lg:rounded-lg shadow-sm md:shadow-md lg:shadow-lg",
           "px-4 py-12 md:px-4 md:py-16 lg:p-24",
           "challenge-bg"
         )}
@@ -36,7 +36,7 @@ export default function Home() {
           >
             <Image src="/challenge2.png" alt="challenge banner" fill />
           </div>
-          <div className="flex flex-col gap-8 flex-1 w-full">
+          <div className="flex flex-col md:gap-8 gap-6 flex-1 w-full">
             <p className="text-lg text-neutral-600">Our mission, in numbers</p>
             <StatsCard count={25664890} label="Downloads" />
             <StatsCard count={17219} label="Paid Users" />
