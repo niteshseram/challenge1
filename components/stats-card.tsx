@@ -9,7 +9,7 @@ export default function StatsCard({ count, label }: Props) {
   return (
     <div
       className={clsx(
-        "flex flex-col gap-4 p-6 w-full text-center",
+        "flex flex-col gap-4 p-[23px] w-full text-center",
         "border border-neutral-200 rounded-lg shadow"
       )}
     >

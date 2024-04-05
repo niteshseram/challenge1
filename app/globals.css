@@ -15,3 +15,7 @@ body {
 .challenge-container {
   background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
 }
+
+.challenge-bg {
+  background: linear-gradient(176.17deg, #f9fafb 0.94%, #edf0f3 316.54%);
+}

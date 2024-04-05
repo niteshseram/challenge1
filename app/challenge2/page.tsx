@@ -9,8 +9,9 @@ export default function Home() {
       <div
         className={clsx(
           "flex items-center justify-center gap-12 md:gap-16 grow flex-col",
-          "rounded-lg shadow-lg bg-gray-50",
-          "px-4 py-12 md:px-4 md:py-16 lg:p-24"
+          "rounded md:rounded-md lg:rounded-lg lg:shadow-lg md:shadow-md shadow-sm",
+          "px-4 py-12 md:px-4 md:py-16 lg:p-24",
+          "challenge-bg"
         )}
       >
         <div className={clsx("flex flex-col justify-center gap-5", "lg:px-8")}>
