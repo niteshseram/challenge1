@@ -5,10 +5,10 @@ import StatsCard from "@/components/stats-card";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 flex challenge-container">
+    <main className="min-h-screen p-4 challenge-container">
       <div
         className={clsx(
-          "flex items-center justify-center gap-12 md:gap-16 grow flex-col",
+          "flex items-center justify-center gap-12 md:gap-16 flex-col",
           "rounded md:rounded-md lg:rounded-lg shadow-sm md:shadow-md lg:shadow-lg",
           "px-4 py-12 md:px-4 md:py-16 lg:p-24",
           "challenge-bg"
