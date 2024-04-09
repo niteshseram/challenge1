@@ -1,5 +1,10 @@
 import clsx from "clsx";
-import { ChangeEvent, useId } from "react";
+import { ChangeEvent, InputHTMLAttributes, useId } from "react";
+
+type Attributes = Pick<
+  InputHTMLAttributes<HTMLInputElement>,
+  "disabled" | "required"
+>;
 
 type Props = Readonly<{
   label: string;
@@ -7,7 +12,8 @@ type Props = Readonly<{
   onChange?: (value: string, event: ChangeEvent<HTMLInputElement>) => void;
   type?: "email" | "text";
   disabled?: boolean;
-}>;
+}> &
+  Readonly<Attributes>;
 
 export default function Input({
   label,
@@ -15,6 +21,7 @@ export default function Input({
   onChange,
   type = "text",
   disabled,
+  ...props
 }: Props) {
   const id = useId();
   return (
@@ -40,6 +47,7 @@ export default function Input({
           onChange?.(event.target.value, event);
         }}
         placeholder={placeholder}
+        {...props}
       />
     </div>
   );

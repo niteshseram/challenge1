@@ -3,7 +3,7 @@ import { ChangeEvent, TextareaHTMLAttributes, useId, useState } from "react";
 
 type Attributes = Pick<
   TextareaHTMLAttributes<HTMLTextAreaElement>,
-  "disabled" | "id" | "maxLength" | "minLength" | "rows"
+  "disabled" | "id" | "maxLength" | "minLength" | "rows" | "required"
 >;
 
 type Props = Readonly<{
@@ -52,6 +52,7 @@ export default function TextArea({
           onChange?.(event.target.value, event);
         }}
         placeholder={placeholder}
+        maxLength={maxLength}
         {...props}
       />
       <div className={clsx("flex w-full justify-end")}>

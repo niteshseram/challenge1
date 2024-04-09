@@ -9,6 +9,7 @@ type Props = Readonly<{
 export default function Button({ label, onClick, type = "button" }: Props) {
   return (
     <button
+      onClick={onClick}
       type={type}
       className={clsx(
         "text-center text-white font-medium",
