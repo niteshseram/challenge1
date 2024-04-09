@@ -7,7 +7,7 @@ import Button from "./button";
 
 export default function ContactForm() {
   return (
-    <div
+    <form
       className={clsx(
         "flex flex-col gap-11",
         "w-full h-full p-4 md:p-8",
@@ -32,6 +32,6 @@ export default function ContactForm() {
         />
       </div>
       <Button label="Submit" />
-    </div>
+    </form>
   );
 }
